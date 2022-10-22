@@ -1,5 +1,5 @@
-// * Cada oveja tiene un nombre y un color. Haz una función que devuelva una lista con todas las ovejas que sean de color rojo
-y que además su nombre contenga tanto las letras n Y a, sin importar el orden, las mayúsculas o espacios.
+/* Cada oveja tiene un nombre y un color. Haz una función que devuelva una lista con todas las ovejas que sean de color rojo
+y que además su nombre contenga tanto las letras n Y a, sin importar el orden, las mayúsculas o espacios. */
 
 const ovejas = [
   { name: 'Noa', color: 'azul' },
@@ -22,7 +22,7 @@ function contarOvejas(ovejas) {
 };
 
 
-// * Solucion 2, Funciona pero en la página no.
+// * Solucion 2, funciona pero en la página no.
 function contarOvejas(ovejas) {
   const ovejasFiltradas = [];
   for (let i = 0; i < ovejas.length; i++) {
