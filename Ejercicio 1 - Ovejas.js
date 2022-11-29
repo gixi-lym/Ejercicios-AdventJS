@@ -34,3 +34,12 @@ function contarOvejas(ovejas) {
   };
   return ovejasFiltradas;
 };
+
+ 
+// * Solución 3.
+function contarOvejas(array) {
+  const regExpN = /[n]/ig;
+  const regExpA = /[a]/ig;
+  const filtrar = array.filter(oveja => oveja.color === "rojo" && regExpN.exec(oveja.name) && regExpA.exec(oveja.name));
+  return filtrar;
+};
