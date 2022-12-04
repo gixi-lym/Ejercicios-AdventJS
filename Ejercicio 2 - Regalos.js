@@ -12,17 +12,19 @@ Transforma el texto a un objeto que contenga el nombre de cada regalo y las vece
 }
 */
 
+const carta = "bici coche balon _playstation bici coche peluche";
+
 //* Solución 1.
-  function listGifts(letter) {
+  function listaRegalos(carta) {
     const resultado = {};
-    const filtrarPalabras = letter.trim().split(" ").filter(p => !p.startsWith("_"));
+    const filtrarPalabras = carta.trim().split(" ").filter(p => !p.startsWith("_"));
     filtrarPalabras.map((regalo) => {
       resultado[regalo] =
         resultado[regalo] === undefined ? 1 : resultado[regalo] + 1;
     });
     return resultado;
   };
-  listGifts(carta);
+  listaRegalos(carta);
 
 //* Solución que no soluciona nada - Es espantosa y está mal hecha, aún así retorna lo que debe xd.
   function Regalos() {
